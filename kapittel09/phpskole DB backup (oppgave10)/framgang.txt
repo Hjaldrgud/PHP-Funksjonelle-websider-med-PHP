@@ -1,0 +1,4 @@
+velg database
+"export"
+"go"
+så vil DBen laste seg ned fra "internett" i nettleseren

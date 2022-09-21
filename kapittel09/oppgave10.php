@@ -1,0 +1,3 @@
+<?php
+    //Alles gut!
+?>

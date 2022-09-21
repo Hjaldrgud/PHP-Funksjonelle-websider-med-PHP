@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Oppgave 01 HTTP-autentisering"
+AuthUserFile "C:/Spill/Servergreier/xampp/htdocsASSETS/HTTP-autentisering/.htpasswd"
+require valid-user
