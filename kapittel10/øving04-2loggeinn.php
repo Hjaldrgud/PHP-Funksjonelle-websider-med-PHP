@@ -2,8 +2,8 @@
     session_start();
     session_destroy();
     if(isset($_POST['innlogget'])) {
-        require_once("../../../htdocsASSETS/inc/PDOgenerering.inc.php");
-        require_once("../../../htdocsASSETS/inc/VaskingValidering.inc.php");
+        require_once("../../../../htdocsASSETS/inc/DB.inc.php");
+        require_once("../../../../htdocsASSETS/inc/VaskingValidering.inc.php");
         $sql = "SELECT * FROM medlemmerk10ø3 WHERE m_bnavn = :bnavn";
         $sp = $pdo->prepare($sql);
 

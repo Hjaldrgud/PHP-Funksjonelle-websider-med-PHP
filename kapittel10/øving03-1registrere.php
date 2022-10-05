@@ -2,7 +2,7 @@
     session_start();
     session_destroy();
     if(isset($_REQUEST['registrert'])) {
-        require_once("../../../htdocsASSETS/inc/PDOgenerering.inc.php");
+        require_once("../../../../htdocsASSETS/inc/DB.inc.php");
         $bnavn = $_REQUEST['bnavn'];
         $passord = password_hash($_REQUEST['passord'], PASSWORD_DEFAULT);
         $fnavn = $_REQUEST['fnavn'];

@@ -3,8 +3,8 @@
     session_destroy();
     $meldinger = array();
     if(isset($_POST['innlogget'])) {
-        require_once("../../../htdocsASSETS/inc/PDOgenerering.inc.php");
-        require_once("../../../htdocsASSETS/inc/VaskingValidering.inc.php");
+        require_once("../../../../htdocsASSETS/inc/DB.inc.php");
+        require_once("../../../../htdocsASSETS/inc/VaskingValidering.inc.php");
         $sql = "SELECT br_id, br_fnavn, br_enavn, br_epost, br_po FROM brukere WHERE br_bnavn = :bnavn";
         $sp = $pdo->prepare($sql);
 
@@ -59,6 +59,6 @@
         }
     ?>
     <br>
-    ikke bruker? registrer deg <a href="http://localhost/phpskole/kapittel10/%C3%B8ving02registrerBruker.php">her</a> 
+    ikke bruker? registrer deg <a href="http://localhost/PHP skole/PHP - Funksjonelle websider med PHP/kapittel10/%C3%B8ving02registrerBruker.php">her</a> 
 </body>
 </html>

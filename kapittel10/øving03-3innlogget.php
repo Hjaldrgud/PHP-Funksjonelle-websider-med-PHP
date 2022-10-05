@@ -11,9 +11,11 @@
 </head>
 <body>
     <?php 
-        if(isset($_REQUEST['id']) && $_SESSION['medlem']['innlogget']) {
+        if(isset($_REQUEST['id']) && isset($_SESSION['medlem']['innlogget'])) {
             if($_REQUEST['id'] == $_SESSION['medlem']['id']) {
-                echo "Dette gikk fint. din ID stemmer overens med sida du ønsker å se";
+                echo "Dette gikk fint. din ID stemmer overens med sida du ønsker å se.";
+            } else {
+                echo "Du kan ikke se informasjonside om andre medlemmer.";
             }
         } else {
             echo "Du må logge inn på nettsiden først.";
