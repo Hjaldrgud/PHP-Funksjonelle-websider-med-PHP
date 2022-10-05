@@ -1,6 +1,6 @@
 <?php
-    require_once("../../../htdocsASSETS/inc/PDOgenerering.inc.php");
-    require_once("../../../htdocsASSETS/inc/VaskingValidering.inc.php");
+    require_once("../../../../htdocsASSETS/inc/DB.inc.php");
+    require_once("../../../../htdocsASSETS/inc/VaskingValidering.inc.php");
     if(isset($_REQUEST['registrert'])) {
 
         $bnavn = vask($_REQUEST['bnavn']);
