@@ -33,6 +33,7 @@
                 $_SESSION['bruker']['bnavn'] = $medlem->m_bnavn;
                 $_SESSION['bruker']['ID'] = $medlem->m_id;
                 $_SESSION['bruker']['innlogget'] = 1;
+                $_SESSION['bruker']['fulltnavn'] = $medlem->m_fnavn . " " . $medlem->m_enavn;
                 header("Location:øving03_3_innlogget.php?id=$medlem->m_id");
                 exit();
             } else {
