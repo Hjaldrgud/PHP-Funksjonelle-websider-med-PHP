@@ -1,4 +1,5 @@
 <?php
+    //SUKSESS!!!
     function lastnedUtenåse($filhenv) {
         $suksess = 'øving04.php';
         $fiasko = '';
@@ -17,5 +18,5 @@
         }
     }
 
-    lastnedUtenåse('filer/Innlevering 1.pdf');
+    lastnedUtenåse('filer/'.$_GET['fil']);
 ?>
