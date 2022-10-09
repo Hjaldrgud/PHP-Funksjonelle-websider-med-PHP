@@ -1,24 +1,3 @@
-<?php
-    function vask ($s) {
-        $s = strip_tags($s);
-        return $s;
-    }
-
-    function lastned($filhenv) {
-        if(file_exists($filhenv)) {
-            header("Content-description: File Transfer");
-            header("Content-Type: application/octet-stream");
-            header("Content-length: " . filesize($filhenv));
-            header("Content-Transfer-Encoding: Binary");
-            header("Content-Disposition: Attachment;
-                    filename=\"" . $filhenv . '"');
-            header("Pragma: public");
-            readfile($filhenv);
-        }
-    }
-
-    lastned('Innlevering 1.pdf');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +25,7 @@
                     echo '<td>' . filetype($kat . $fil) . '</td>';
                     echo '<td>' . filesize($kat . $fil) . '</td>';
                     echo '<td>' . date("d.m.Y \k\l. H:i", filemtime($kat . $fil)) . '</td>';
-                    echo '<td><input type="radio" name="nedlastfil" value="' . $fil . '"></td>';
+                    echo '<td><a href="øving04nedlastfil.php?fil='.$fil.'">last  ned</a></td>'; //Deilig løsning med GET
                 echo '</tr>';
                 } 
             }
