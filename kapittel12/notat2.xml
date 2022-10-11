@@ -1,13 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-    <notat>
-        <til>Silje</til>
-        <fra>Johan</fra>
-        <overskrift>Kursforberedelse</overskrift>
-        <melding>Lese kapittel 4 i boka</melding>
-    </notat>
-    <notat>
-        <til>Johan</til>
-        <fra>Silje</fra>
-        <overskrift>Jada</overskrift>
-        <melding>Masekopp!</melding>
-    </notat>
+    <notater>
+        <notat>
+            <til>Silje</til>
+            <fra>Johan</fra>
+            <overskrift>Kursforberedelse</overskrift>
+            <melding>Lese kapittel 4 i boka</melding>
+        </notat>
+        <notat>
+            <til>Johan</til>
+            <fra>Silje</fra>
+            <overskrift>Jada</overskrift>
+            <melding>Masekopp!</melding>
+        </notat>
+    </notater>
