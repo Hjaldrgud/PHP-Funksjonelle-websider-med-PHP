@@ -1,7 +1,6 @@
 <?php
-$palindrom = "221";
 
-function palindromsjekk () {
+function palindromsjekk ($palindrom) {
     global $palindrom;
     echo $palindrom . "<br>";
     $antall = floor(strlen($palindrom)/2);
@@ -16,5 +15,5 @@ function palindromsjekk () {
     echo ($front == $bak ? "Dette er et palindrom" : "Dette er IKKE et palindrom");
 }
 
-palindromsjekk();
+palindromsjekk(223);
 ?>

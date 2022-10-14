@@ -1,15 +1,29 @@
 <?php
-    include_once("../../../htdocsASSETS/lib/html.lib.php");
+    function melding($melding) {
+        echo "<br><strong>" . $melding . "</strong><br>";
+    }
     $spilletigang = true;
     
     function lottobrett () {
         $ord = array (
-            "glass", "glass", "kaffe", "kaffe", "kronprins", "kronprins",
-            "piano", "piano", "stol", "stol", "lys", "lys",
-            "TV", "TV", "veranda", "veranda", "butikk", "butikk",
-            "sverd", "sverd", "pannekake", "pannekake", "brannmaneit", "brannmaneit",
-            "heisekran", "heisekran", "hytte", "hytte", "skap", "skap",
-            "lyn", "lyn", "asteroide", "asteroide", "teppe", "teppe"
+            "glass", "glass", 
+            "kaffe", "kaffe", 
+            "kronprins", "kronprins",
+            "piano", "piano", 
+            "stol", "stol", 
+            "lys", "lys",
+            "TV", "TV", 
+            "veranda", "veranda", 
+            "butikk", "butikk",
+            "sverd", "sverd", 
+            "pannekake", "pannekake", 
+            "brannmaneit", "brannmaneit",
+            "heisekran", "heisekran", 
+            "hytte", "hytte", 
+            "skap", "skap",
+            "lyn", "lyn", 
+            "asteroide", "asteroide", 
+            "teppe", "teppe"
         );
         shuffle($ord);
         return $ord;
@@ -21,6 +35,9 @@
         if(isset($_REQUEST['valgteRuter'])) {
             $ord = $_REQUEST['rutematrise'];
             $valgteRuter = $_REQUEST['valgteRuter'];
+            echo "<pre>";
+            print_r($_REQUEST);
+            echo "</pre>";
             if(count($valgteRuter) <= 1) {
                 melding("Velg to ruter");
             } else {
@@ -49,7 +66,7 @@
                 } else {
                     echo "Beklager! feil!";
                 }
-             }
+            }
         }
     }
     
